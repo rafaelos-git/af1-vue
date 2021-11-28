@@ -60,7 +60,7 @@ export default {
       { text: 'Inicio', link: '/' },
       { text: 'Sobre', link: '/about' },
       { text: 'Animes', link: '/animes' },
-      { text: 'AnimeList', link: '/anime_list' },
+      { text: 'Lista de Animes', link: '/anime_list' },
     ],
   }),
   methods: {

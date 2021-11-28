@@ -2,9 +2,9 @@
 <template>
   <v-card class="anime-card" anime-name="SnK">
     <div class="anime-card__image">
-      <img v-if="!pokemon" src="../assets/shingeki-no-kyojin.jpg" alt="Imagem Anime">
-      <img v-if="!!pokemon" :src="anime.anime.$attrs.anime_list.imageSrc" alt="Imagem Anime">
-      <div v-if="!!pokemon" class="anime-card__name">{{anime.anime.$attrs.anime_list.name}}</div>
+      <img v-if="!anime" src="../assets/shingeki-no-kyojin.jpg" alt="Imagem Anime">
+      <img v-if="!!anime" :src="anime.anime.$attrs.anime_list.imageSrc" alt="Imagem Anime">
+      <div v-if="!!anime" class="anime-card__name">{{anime.anime.$attrs.anime_list.name}}</div>
     </div>
   </v-card>
 </template>

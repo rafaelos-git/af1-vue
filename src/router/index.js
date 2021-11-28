@@ -14,23 +14,17 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: {
-      default: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-    }
+    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
     path: '/anime_list',
     name: 'AnimeList',
-    component: {
-      default: () => import(/* webpackChunkName: "anime_list" */ '../views/AnimeList.vue')
-    }
+    component: () => import(/* webpackChunkName: "anime_list" */ '../views/AnimeList.vue')
   },
   {
     path: '/animes',
     name: 'Animes',
-    component: {
-      default: () => import(/* webpackChunkName: "animes" */ '../views/Animes.vue')
-    }
+    component: () => import(/* webpackChunkName: "animes" */ '../views/Animes.vue')
   }, 
 ]
 

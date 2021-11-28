@@ -13,7 +13,7 @@
           class="mx-xs-auto"
         >
           <v-skeleton-loader type="card-avatar" :loading="loading">
-            <animeList :anime="listAnime[1]"></animeList>
+            <animeList :anime="listAnime[i]"></animeList>
           </v-skeleton-loader>
         </v-col>
       </v-row>
@@ -24,6 +24,7 @@
 <script>
 import { mapState } from 'vuex'
 import animeList from '@/components/AnimeList'
+
 export default {
   data: () => ({
     loading: true,    
