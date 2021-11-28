@@ -1,4 +1,4 @@
-# Desenvolvimento de Aplicações WEB - FACENS | AF1-Vue
+# Desenvolvimento de Aplicações WEB - FACENS | AF-Vue
 
 - Rafael Oliveira Silva | RA: 190348
 
@@ -28,4 +28,18 @@ npm run lint
 
 ## Images
 
-![Screenshot](Images/Main.png)
+## Inicio
+
+![Screenshot](Images/Inicio.png)
+
+## Sobre
+
+![Screenshot](Images/Sobre.png)
+
+## Animes
+
+![Screenshot](Images/Animes.png)
+
+## Lista de Animes
+
+![Screenshot](Images/AnimeList.png)
