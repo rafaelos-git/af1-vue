@@ -3,32 +3,45 @@
     :value="value"
     color="primary"
   >
-    <div id="share">
-      <span>
-        Compartilhar via:
-      </span>
-      <v-btn>
-        <span>
-          whatsapp
-        </span>
-        <v-icon>mdi-whatsapp</v-icon>
-      </v-btn>
+    <v-btn
+      href
+      router
+      to="/"
+    >
+      <span>Início</span>
 
-      <v-btn>
-        <span>
-          facebook
-        </span>
-        <v-icon>mdi-facebook</v-icon>
-      </v-btn>
+      <v-icon>mdi-home</v-icon>
+    </v-btn>
 
-      <v-btn>
-        <span>
-          instagram
-        </span>
-        <v-icon>mdi-instagram</v-icon>
-      </v-btn>
-    </div>
-    
+    <v-btn
+      href
+      router
+      to="/about"
+    >
+      <span>Sobre</span>
+
+      <v-icon>mdi-information-variant</v-icon>
+    </v-btn>
+
+    <v-btn
+      href
+      router
+      to="/animes"
+    >
+      <span>Animes</span>
+
+      <v-icon>mdi-television</v-icon>
+    </v-btn>
+
+    <v-btn
+      href
+      router
+      to="/anime_list"
+    >
+      <span>Lista de Animes</span>
+
+      <v-icon>mdi-format-list-bulleted</v-icon>
+    </v-btn>
   </v-bottom-navigation>
 </template>
 

@@ -23,6 +23,5 @@ export default {
     padding: 1rem 0;
     background: rgb(255, 70, 70);
     text-align: center;
-    margin-bottom: 15px;
   }
 </style>

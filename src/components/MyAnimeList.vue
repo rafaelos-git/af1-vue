@@ -1,7 +1,7 @@
 <template>
   <v-card class="anime-card" anime-name="shingeki-no-kiojin">
     <div class="anime-card__image">
-      <img src="../assets/shingeki-no-kyojin.jpg" alt="Imagem Anime">
+      <img src="../assets/SnK.png" alt="Imagem Anime">
     </div>
   </v-card>
 </template>
