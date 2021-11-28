@@ -1,18 +1,14 @@
-
 <template>
-  <v-card class="anime-card" anime-name="SnK">
+  <v-card class="anime-card" anime-name="shingeki-no-kiojin">
     <div class="anime-card__image">
-      <img v-if="!pokemon" src="../assets/shingeki-no-kyojin.jpg" alt="Imagem Anime">
-      <img v-if="!!pokemon" :src="anime.anime.$attrs.anime_list.imageSrc" alt="Imagem Anime">
-      <div v-if="!!pokemon" class="anime-card__name">{{anime.anime.$attrs.anime_list.name}}</div>
+      <img src="../assets/shingeki-no-kyojin.jpg" alt="Imagem Anime">
     </div>
   </v-card>
 </template>
 
 <script>
 export default {
-  data: (anime) => ({
-    anime: anime,
+  data: () => ({
   }),
   methods: {
   },
@@ -24,40 +20,31 @@ export default {
 <style>
   .anime-card {
     position: relative;
-
-    margin-top: 20%;
-
-    width: 70%;
+    width: 90%;
     height: 5rem;
-    min-width: 70%;
+    min-width: 90%;
     min-height: 8rem;
-
     padding: 0.5rem;
     border-radius: 1rem;
-    background-color: rgb(245, 168, 168);
+    background-color: #fff;
     box-shadow: var(--card-shadow);
-
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
-
-  .anime-card .anime {
+  .anime-card .animes {
     cursor: pointer;
   }
-
   .anime-card__image {
     width: 100%;
     height: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
   .anime-card__image img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
   }
 </style>

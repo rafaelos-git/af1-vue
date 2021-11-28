@@ -1,9 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import NavDrawer from '@/components/NavDrawer.vue'
-import Footer from '@/components/Footer.vue'
-import StatusBar from '@/components/StatusBar.vue'
-import BottomNav from '@/components/BottomNav.vue'
 
 Vue.use(VueRouter)
 
@@ -12,13 +8,30 @@ const routes = [
     path: '/',
     name: 'Home',
     components: {
-      NavDrawer,
-      Footer,
-      BottomNav,
-      StatusBar,
-      default: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
+      default: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
+    },
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: {
+      default: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
     }
-  },  
+  },
+  {
+    path: '/anime_list',
+    name: 'AnimeList',
+    component: {
+      default: () => import(/* webpackChunkName: "anime_list" */ '../views/AnimeList.vue')
+    }
+  },
+  {
+    path: '/animes',
+    name: 'Animes',
+    component: {
+      default: () => import(/* webpackChunkName: "animes" */ '../views/Animes.vue')
+    }
+  }, 
 ]
 
 const router = new VueRouter({
