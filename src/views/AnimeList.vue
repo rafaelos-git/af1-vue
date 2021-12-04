@@ -22,18 +22,29 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import animeList from '@/components/AnimeList'
 
 export default {
   data: () => ({
-    loading: true,    
+    loading: true,
+    countAnimesToAddFromAPI: 20,    
   }),
   components: {
     animeList,
   },
   computed: mapState(['listAnime']),
+  methods: {
+    ...mapActions(['addRamdomAnime']),
+  },
   mounted() {
+    let i = 0
+
+    while(i < this.countAnimesToAddFromAPI) {
+      this.addRamdomAnime()
+      i++
+    }
+
     setTimeout(() => {
       this.loading = false
     }, 5000)
