@@ -35,14 +35,14 @@ export default {
   },
   computed: mapState(['listAnime']),
   methods: {
-    ...mapActions(['addRamdomAnime']),
+    ...mapActions(['addRandomAnime']),
   },
   mounted() {
     let i = 0
 
     while(i < this.countAnimesToAddFromAPI) {
-      this.addRamdomAnime()
-      i++
+      this.addRandomAnime()
+      i += 1
     }
 
     setTimeout(() => {

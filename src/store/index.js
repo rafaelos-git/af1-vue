@@ -60,16 +60,18 @@ export default new Vuex.Store({
     async addAnimeByID(state, animeId) {
       const animeData = await httpClient.get(`https://kitsu.io/api/edge/anime/${animeId}/`);
 
+      console.log('animeData', animeData)
+
       state.listAnime.push({
         id: animeId,
         name: animeData.data.attributes.canonicalTitle || '',
-        imageSrc: animeData.data.posterImage.tiny,
+        imageSrc: animeData.data.attributes.posterImage.tiny,
       })
     },
   },
   actions: {
     addRandomAnime: ({commit}) => {
-      const min = 100, max = 400;
+      const min = 1, max = 400;
       const randomId = '' + Math.floor(Math.random() * (max - min) + min);
 
       commit('addAnimeByID', randomId);
