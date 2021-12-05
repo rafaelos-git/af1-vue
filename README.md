@@ -44,6 +44,6 @@ npm run lint
 
 ![Screenshot](Images/AnimeList.png)
 
-## Lista de Animes (VUEX - EVENTOS)
+## Lista de Animes VUEX EVENTOS (Rodar Scroll para aparecer a Bottom Navigator)
 
 ![Screenshot](Images/AnimeListEvent.png)
