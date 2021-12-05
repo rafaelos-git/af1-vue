@@ -40,6 +40,10 @@ npm run lint
 
 ![Screenshot](Images/Animes.png)
 
-## Lista de Animes (VUEX - EVENTOS)
+## Lista de Animes
 
 ![Screenshot](Images/AnimeList.png)
+
+## Lista de Animes (VUEX - EVENTOS)
+
+![Screenshot](Images/AnimeListEvent.png)
